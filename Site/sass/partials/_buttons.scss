@@ -1,0 +1,7 @@
+// El butterinos
+
+.btn { font-family: 'Open Sans', sans-serif; }
+.btn-naked { font-family: 'Lora', serif; color: $blue; display: inline-block; padding: 10px; font-size: 1.1em;
+  &:hover { color: $turq; }
+  i { vertical-align: -4px; font-size: 1.1em;}
+}

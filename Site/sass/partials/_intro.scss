@@ -1,0 +1,77 @@
+// The intro sliderino
+
+
+.intro-container {
+    animation: 15s infinite fadingcolors linear;
+    background: #3eb1be;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+    .intro {
+      width: 80%;
+      height: 50%;
+      margin: auto;
+      position: absolute;
+      top: 100px; left: 0; bottom: 0; right: 0;
+      text-align: center;
+      h1 { visibility: hidden; }
+      h2 { color: white; font-size: 1.2em;}
+      img { -webkit-animation-delay: .5s; -moz-animation-delay: .5s; animation-delay: .5s; }
+    }
+}
+
+// Mouse scrolling animation
+
+@-webkit-keyframes scroll-inner {
+    0% {margin-top: 20%; opacity: 1;}
+    90% {margin-top: 60%; opacity: 0;}
+    100% {margin-top: 20%; opacity: 0;}
+}
+@keyframes scroll-inner {
+    0% {margin-top: 20%; opacity: 1;}
+    90% {margin-top: 60%; opacity: 0;}
+    100% {margin-top: 20%; opacity: 0;}
+}
+
+.mouse-container{ position: relative; display: block; height: 50px; top: 30vh; -webkit-animation-delay: 1s; -moz-animation-delay: 1s; animation-delay: 1s; }
+
+.mouse { position:relative; margin:0 auto; display:block; width:30px; height:50px; border: solid 2px white; border-radius: 20px; opacity: .4;
+  .scroll-down{ display:block; width:5px; height:5px; background:#fff; border-radius:50%; margin:15% auto auto auto;
+    -webkit-animation: scroll-inner 1.5s;
+    animation: scroll-inner 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function:ease;
+    animation-timing-function:ease
+  }
+}
+
+// Animation for fading background
+
+@-webkit-keyframes fadingcolors {
+	  0% { background: #ef3b5d; }
+	 27% { background: #f3a428; }
+	 50% { background: #52d9d8; }
+	 75% { background: #3eb1be; }
+  100% { background: #ef3b5d; }
+}
+
+@-moz-keyframes fadingcolors {
+	  0% { background: #ef3b5d; }
+	 25% { background: #f3a428; }
+	 50% { background: #52d9d8; }
+	 75% { background: #3eb1be; }
+  100% { background: #ef3b5d; }
+}
+
+@keyframes fadingcolors {
+	  0% { background: #ef3b5d; }
+	 25% { background: #f3a428; }
+	 50% { background: #52d9d8; }
+	 75% { background: #3eb1be; }
+  100% { background: #ef3b5d; }
+}

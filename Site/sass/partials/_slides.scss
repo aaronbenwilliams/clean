@@ -1,0 +1,47 @@
+// Sliderino stylerinos
+
+.content-wrapper { position: absolute; top: 100vh; width: 100%; z-index: 2; background: white; }
+
+section { padding: 70px 0; }
+
+#about { text-align: center; }
+
+#future { color: $neutral; background: $blue; background: -webkit-linear-gradient($turq 0%, $blue 36%, $blue 100%); background: -o-linear-gradient($turq 0%, $blue 36%, $blue 100%); background: -moz-linear-gradient($turq, $blue); background: linear-gradient($turq 0%, $blue 36%, $blue 100%);
+  h4 { color: $neutral; }
+  .phone-pad { margin-top: -70px; }
+}
+
+#features { color: $neutral;  text-align: center; background: $blue; padding: 100px 0 0;
+  .inner { background: $blue; border-top: 2px solid rgba(255,255,255,.2); position: relative; top: -380px; height: 380px; padding: 100px 40px;
+    h4, h5 { color: $neutral; }
+    .title { margin-bottom: 50px; }
+    .material-icons { margin-top: 30px; }
+  }
+}
+
+#pricing { text-align: center; background: $neutral; padding: 100px 0 300px;
+  .inner { background: $neutral; position: relative; top: -380px; height: 380px; padding: 100px 40px; }
+  .title { margin-bottom: 50px; }
+  .left-align { text-align: left; }
+  .price { font-size: 4em; font-family: 'Open Sans', sans-serif; display: block;
+    small { font-size: .4em; color: $trim; }
+  }
+  .price-extra { font-size: 3em; font-family: 'Open Sans', sans-serif; display: block; padding-top: 40px;
+    small { font-size: .6em; color: $trim; }
+  }
+  .price-first { padding-top: 0; }
+  .price-list { list-style: none; margin: 0; padding: 0;
+    li { color: $text-light; }
+  }
+}
+
+#contact { text-align: center; background: $pink; padding: 100px 0 0; color: $neutral;
+  .inner { background: $pink; position: relative; top: -340px; padding: 100px 40px; }
+  h4 { color: $neutral; }
+}
+
+footer { bottom: 50px; z-index: 9999; right: 25vw; position: absolute;
+  a { opacity: .5;  -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; transition: opacity 0.5s ease;
+    &:hover { opacity: 1;  -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; transition: opacity 0.5s ease; }
+  }
+}

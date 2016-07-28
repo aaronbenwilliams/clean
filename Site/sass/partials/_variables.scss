@@ -1,0 +1,17 @@
+// Variablerinos
+
+$neutral:      #fff;
+$dark:         #333;
+$trim:         #d0d0d0;
+
+$pink:         #ef3b5d;
+$orange:       #f3a428;
+$turq:         #52d9d8;
+$blue:         #3eb1be;
+
+$text:         #555;
+$text-light:   #999;
+
+a { color: $text;
+  &:hover { color: $turq; }
+}
